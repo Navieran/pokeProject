@@ -1,0 +1,166 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.pokemon-container {
+    display: flex;
+    justify-content: space-around;
+    animation: fade-in 1s ease-out
+}
+
+.pokemon {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    animation: fade-in 1s ease-out;
+}
+
+.pokemon img {
+    width: 150px;
+    height: 150px;
+    /*display: none; /* Hide images by default */
+}
+
+
+#fetchPokemon {
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #333; /* Change the border color to black */
+    width: 200px;
+    margin-left: auto;
+    animation: slide-in 0.5s ease-out;
+}
+
+#buttonHeader {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    animation: fade-in 1s ease-out;
+}
+
+
+.winner-image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    animation: fade-in 1s ease-out;
+}
+
+
+#pokemon1, #pokemon2, #battleResult {
+    text-align: center;
+    margin: 20px auto;
+    margin-left: 20px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.5s ease-out;
+}
+
+#container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #333;
+    border-radius: 30px;
+    padding: 50;
+    height: 650px;
+    animation: fade-in 1s ease-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: fade-in 1s ease-out;
+}
+
+#battleTableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Optional: adjust height as needed */
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+#battleTable table {
+    border-collapse: collapse;
+    width: auto; /* Adjust width as needed */
+    margin: auto;
+}
+
+#battleTableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Optional: adjust height as needed */
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+#battleTable table {
+    border-collapse: collapse;
+    width: auto; /* Adjust width as needed */
+    margin: auto;
+}
+
+/* Additional CSS for DataTables */
+.dataTables_wrapper {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+    margin-bottom: 10px;
+}
+
+.dataTables_length select,
+.dataTables_filter input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dataTables_paginate {
+    float: right;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 2px 10px;
+    margin-left: 5px;
+}
