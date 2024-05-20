@@ -14,4 +14,4 @@ The Pokemon Battle Web Application is a web-based platform designed for Pokemon 
 -Android Chrome
 -Android Firefox
 
-See the [Developer Manual](docs.md) for more info.
+See the [Developer Manual](docs.md) for more info. 
